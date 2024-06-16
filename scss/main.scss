@@ -70,6 +70,12 @@ main {
     }
 }
 
+.accordion__item[open] {
+    .accordion__item__title::after {
+        content: url("../assets/images/icon-plus.svg");
+    }
+}
+
 hr {
     margin: var(--gap-25) 0;
 }
