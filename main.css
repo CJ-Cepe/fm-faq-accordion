@@ -1,7 +1,8 @@
 @font-face {
   font-family: "Work Sans";
-  src: url("/assets/fonts/WorkSans-VariableFont_wght.ttf");
+  src: url("./assets/fonts/WorkSans-VariableFont_wght.ttf");
 }
+
 :root {
   --white: hsl(0, 0%, 100%);
   --light-pink: hsl(275, 100%, 97%);
@@ -26,10 +27,11 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 body::before {
   content: " ";
   position: absolute;
-  background-image: url("/assets/images/background-pattern-desktop.svg");
+  background-image: url("./assets/images/background-pattern-desktop.svg");
   background-size: cover;
   background-position: center;
   top: 0;
@@ -38,6 +40,7 @@ body::before {
   height: 100%;
   max-height: 320px;
 }
+
 @media (max-width: 640px) {
   body {
     padding: 8.75rem 1.5rem;
@@ -64,13 +67,14 @@ body::before {
   display: flex;
   align-items: center;
 }
+
 .accordion__header::before {
   content: " ";
   display: inline-block;
   width: clamp(1.75rem, 3.77358vw + 0.86557rem, 2.375rem);
   aspect-ratio: 1/1;
   margin-right: 24px;
-  background-image: url("/assets/images/icon-star.svg");
+  background-image: url("./assets/images/icon-star.svg");
   background-size: contain;
 }
 
@@ -83,19 +87,24 @@ body::before {
   align-items: center;
   gap: var(--gap-24);
 }
+
 .accordion__item__title::after {
-  content: url("/assets/images/icon-plus.svg");
+  content: url("./assets/images/icon-plus.svg");
   display: inline-block;
   width: auto;
   aspect-ratio: 1/1;
   margin-left: auto;
 }
-.accordion__item__title::-webkit-details-marker, .accordion__item__title::marker {
+
+.accordion__item__title::-webkit-details-marker,
+.accordion__item__title::marker {
   display: none;
 }
+
 .accordion__item__title:hover {
   color: var(--purple);
 }
+
 .accordion__item__content {
   line-height: 150%;
   margin-top: var(--gap-24);
@@ -103,7 +112,7 @@ body::before {
 }
 
 .accordion__item[open] .accordion__item__title::after {
-  content: url("/assets/images/icon-minus.svg");
+  content: url("./assets/images/icon-minus.svg");
 }
 
 hr {
@@ -112,4 +121,6 @@ hr {
   border: none;
   background: var(--grayish-purple);
   background: linear-gradient(45deg, rgba(249, 240, 255, 0.1) 0%, rgb(249, 240, 255) 5%, rgb(249, 240, 255) 95%, rgba(249, 240, 255, 0.1) 100%);
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
