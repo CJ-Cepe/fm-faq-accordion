@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Work Sans";
-  src: url("../assets/fonts/WorkSans-VariableFont_wght.ttf");
+  src: url("/assets/fonts/WorkSans-VariableFont_wght.ttf");
 }
 :root {
   --white: hsl(0, 0%, 100%);
@@ -29,7 +29,7 @@ body {
 body::before {
   content: " ";
   position: absolute;
-  background-image: url("../assets/images/background-pattern-desktop.svg");
+  background-image: url("/assets/images/background-pattern-desktop.svg");
   background-size: cover;
   background-position: center;
   top: 0;
@@ -70,7 +70,7 @@ body::before {
   width: clamp(1.75rem, 3.77358vw + 0.86557rem, 2.375rem);
   aspect-ratio: 1/1;
   margin-right: 24px;
-  background-image: url("../assets/images/icon-star.svg");
+  background-image: url("/assets/images/icon-star.svg");
   background-size: contain;
 }
 
@@ -84,7 +84,7 @@ body::before {
   gap: var(--gap-24);
 }
 .accordion__item__title::after {
-  content: url("../assets/images/icon-plus.svg");
+  content: url("/assets/images/icon-plus.svg");
   display: inline-block;
   width: auto;
   aspect-ratio: 1/1;
@@ -103,7 +103,7 @@ body::before {
 }
 
 .accordion__item[open] .accordion__item__title::after {
-  content: url("../assets/images/icon-minus.svg");
+  content: url("/assets/images/icon-minus.svg");
 }
 
 hr {
